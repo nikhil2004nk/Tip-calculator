@@ -1,154 +1,37 @@
-/* SelectPercentage.css - Enhanced with smooth transitions and animations */
+/* SelectPercentage.css */
 
 .select-group {
   margin-bottom: 1.5rem;
-  animation: slideInFromRight 0.6s ease-out;
-}
-
-.select-group:nth-child(odd) {
-  animation-delay: 0.1s;
-}
-
-.select-group:nth-child(even) {
-  animation-delay: 0.2s;
 }
 
 .select-wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease;
 }
 
 .select-field {
   width: 100%;
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 0.75rem;
   font-size: 1rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  background-color: #edf2f7;
   color: #2d3748;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  transition: border-color 0.3s;
 }
 
 .select-field:focus {
+  border-color: #3182ce;
   outline: none;
-  border-color: #667eea;
-  box-shadow: 
-    0 0 0 3px rgba(102, 126, 234, 0.1),
-    0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
-.select-field:hover {
-  border-color: #cbd5e0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Custom dropdown arrow */
-.select-wrapper::after {
-  content: '▼';
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #667eea;
-  font-size: 0.8rem;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.select-field:focus + .select-wrapper::after,
-.select-wrapper:hover::after {
-  color: #4a5568;
-  transform: translateY(-50%) rotate(180deg);
 }
 
 .selected-emoji {
   position: absolute;
-  right: 2.5rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.2rem;
   opacity: 0.7;
-  transition: all 0.3s ease;
-  animation: bounce 1s ease-out;
-}
-
-.select-field:focus ~ .selected-emoji,
-.select-wrapper:hover .selected-emoji {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
-}
-
-/* Different emoji colors based on satisfaction level */
-.select-group:nth-child(1) .selected-emoji {
-  filter: hue-rotate(0deg);
-}
-
-.select-group:nth-child(2) .selected-emoji {
-  filter: hue-rotate(60deg);
-}
-
-/* Hover effects for the entire group */
-.select-group:hover .input-label {
-  color: #667eea;
-}
-
-.select-group:hover .label-icon {
-  animation: pulse 1s infinite;
-}
-
-/* Animation for when a value is selected */
-.select-field:not([value="0"]) {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  border-color: #48bb78;
-}
-
-.select-field:not([value="0"]) ~ .selected-emoji {
-  animation: pulse 2s infinite;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .select-group {
-    margin-bottom: 1.25rem;
-  }
-  
-  .select-field {
-    padding: 0.875rem 2.75rem 0.875rem 0.875rem;
-    font-size: 0.95rem;
-  }
-  
-  .selected-emoji {
-    right: 2.25rem;
-    font-size: 1.1rem;
-  }
-  
-  .select-wrapper::after {
-    right: 0.875rem;
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .select-field {
-    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
-    font-size: 0.9rem;
-  }
-  
-  .selected-emoji {
-    right: 2rem;
-    font-size: 1rem;
-  }
-  
-  .select-wrapper::after {
-    right: 0.75rem;
-    font-size: 0.65rem;
-  }
 } 

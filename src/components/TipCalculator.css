@@ -1,57 +1,31 @@
-/* TipCalculator.css - Enhanced with smooth transitions and animations */
+/* TipCalculator.css */
 
 .tip-calculator {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.1),
-    0 8px 16px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  animation: fadeInUp 0.8s ease-out;
-  transition: all 0.3s ease;
-}
-
-.tip-calculator:hover {
-  transform: translateY(-5px);
-  box-shadow: 
-    0 25px 50px rgba(0, 0, 0, 0.15),
-    0 12px 24px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: center;
-  margin-bottom: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  animation: slideInFromLeft 0.8s ease-out 0.2s both;
-}
-
-.heading-icon {
   font-size: 2rem;
-  animation: bounce 2s infinite;
+  font-weight: 700;
+  color: #2b6cb0;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .calculator-content {
-  animation: slideInFromRight 0.8s ease-out 0.4s both;
+  /* Basic content styling */
 }
 
 .rating-section {
   margin: 2rem 0;
-  animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 .result-section {
-  animation: fadeInUp 0.8s ease-out 0.8s both;
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 2px solid rgba(102, 126, 234, 0.1);

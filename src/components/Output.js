@@ -7,7 +7,6 @@ export default function Output({ bill, tip }) {
     <div className="output-container">
       <div className="output-card">
         <div className="output-header">
-          <span className="output-icon">🎯</span>
           <h3 className="output-title">Final Amount</h3>
         </div>
         <div className="output-details">

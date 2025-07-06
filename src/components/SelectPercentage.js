@@ -1,22 +1,9 @@
 import "./SelectPercentage.css";
 
 export default function SelectPercentage({ children, percentage, onSelect }) {
-  const getEmoji = (value) => {
-    switch (value) {
-      case 0: return "😞";
-      case 5: return "😐";
-      case 10: return "😊";
-      case 20: return "😍";
-      default: return "😐";
-    }
-  };
-
   return (
     <div className="input-group select-group">
-      <label className="input-label">
-        <span className="label-icon">⭐</span>
-        {children}
-      </label>
+      <label className="input-label">{children}</label>
       <div className="select-wrapper">
         <select
           className="select-field"
@@ -28,9 +15,6 @@ export default function SelectPercentage({ children, percentage, onSelect }) {
           <option value="10">It was good (10%)</option>
           <option value="20">Absolutely amazing! (20%)</option>
         </select>
-        <div className="selected-emoji">
-          {getEmoji(percentage)}
-        </div>
       </div>
     </div>
   );

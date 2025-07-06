@@ -1,31 +1,20 @@
-/* BillInput.css - Enhanced with smooth transitions and animations */
+/* BillInput.css */
 
 .bill-input-group {
-  margin-bottom: 2rem;
-  animation: slideInFromLeft 0.6s ease-out;
+  margin-bottom: 1.5rem;
 }
 
 .input-label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: block;
   font-weight: 600;
   color: #2c5282;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.label-icon {
-  font-size: 1.2rem;
-  animation: pulse 2s infinite;
+  margin-bottom: 0.5rem;
 }
 
 .input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease;
 }
 
 .currency-symbol {
@@ -35,32 +24,21 @@
   font-weight: 600;
   font-size: 1.1rem;
   z-index: 2;
-  transition: all 0.3s ease;
 }
 
 .bill-input {
   width: 100%;
-  padding: 1rem 1rem 1rem 2.5rem;
-  font-size: 1.1rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  background-color: #edf2f7;
+  transition: border-color 0.3s;
 }
 
 .bill-input:focus {
+  border-color: #3182ce;
   outline: none;
-  border-color: #667eea;
-  box-shadow: 
-    0 0 0 3px rgba(102, 126, 234, 0.1),
-    0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
-.bill-input:focus + .currency-symbol {
-  color: #667eea;
-  transform: scale(1.1);
 }
 
 .bill-input::placeholder {

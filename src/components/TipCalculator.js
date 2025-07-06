@@ -20,10 +20,7 @@ export default function TipCalculator() {
 
   return (
     <div className="tip-calculator">
-      <h1 className="heading">
-        <span className="heading-icon">💰</span>
-        Tip Calculator
-      </h1>
+      <h1 className="heading">Tip Calculator</h1>
 
       <div className="calculator-content">
         <BillInput bill={bill} onSetBill={setBill} />
